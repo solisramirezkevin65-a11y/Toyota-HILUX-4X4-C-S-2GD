@@ -1,159 +1,196 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
-  <title>Toyota HILUX 4X4 C/S 2GD</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoMarket - Productos Orgánicos</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <header>
-    <h1>TOYOTA HILUX 4X4 C/S 2GD</h1>
-    <nav>
-      <ul>
-        <li><a href="#portada">Inicio</a></li>
-        <li><a href="#caracteristicas">Características</a></li>
-        <li><a href="#testimonios">Testimonios</a></li>
-        <li><a href="#contacto">Contáctanos</a></li>
-        <li><a href="#faq">FAQ</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo.png" alt="Logo de EcoMarket">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <section id="portada">
-    <h2>Descubre la nueva Toyota HILUX 4X4 C/S 2GD</h2>
-    <p>La combinación perfecta de potencia, tecnología y resistencia. Diseñada para acompañarte en cualquier terreno.</p>
-    <figure>
-      <video width="1004" height="350" controls autoplay muted>
-        <source src="videos/toyoota linux.mp4">
-      </video>
-      <figcaption>HILUX 4X4</figcaption>
-    </figure>
-  </section>
+    <main>
+        <section id="hero">
+            <h2>Bienvenido a EcoMarket</h2>
+            <p>Tu tienda de productos orgánicos frescos y de calidad.</p>
+            <a href="productos.html" class="cta-button">Ver Productos</a>
+        </section>
 
-  <section id="caracteristicas">
-    <h2>Características</h2>
-    <article>
-      <h3>Motor</h3>
-      <p>Su robusto motor diésel 2.4L 2GD-FTV ofrece hasta 150hp y 400Nm de par, asegurando potencia inmediata y rendimiento confiable tanto en ciudad como fuera de la carretera.</p>
-    </article>
-    <article>
-      <h3>Seguridad</h3>
-      <p>Diseñada para ser tan cómoda como capaz, su interior mezcla funcionalidad con estilo, ofreciendo conectividad, control climático, y una ergonomía pensada para largas jornadas de trabajo o aventura.</p>
-    </article>
-    <article>
-      <h3>Confort</h3>
-      <p>Diseñada para ser tan cómoda como capaz, su interior mezcla funcionalidad con estilo, ofreciendo conectividad, control climático, y una ergonomía pensada para largas jornadas de trabajo o aventura.</p>
-    </article>
-  </section>
+        <section id="productos-destacados">
+            <h3>Productos Destacados</h3>
+            
+            <div class="product-grid">
+            
+                <article class="producto-card">
+                    <div class="img-container">
+                        <img src="img/producto-01.jpg" alt="Producto 1">
+                    </div>
+                    <h4>Kiwi (Importado)</h4>
+                    <p>Precio: S/ 12.00</p>
+                    <a href="producto-detalle.html" class="btn-ver-mas">Comprar</a>
+                </article>
+                
+                <article class="producto-card">
+                    <div class="img-container">
+                        <img src="img/producto2.jpg" alt="Producto 2">
+                    </div>
+                    <h4>Lúcuma</h4>
+                    <p>Precio: S/ 4.00</p>
+                    <a href="producto-detalle.html" class="btn-ver-mas">Comprar</a>
+                </article>
+                
+                <article class="producto-card">
+                    <div class="img-container">
+                        <img src="img/producto3.jpg" alt="Producto 3">
+                    </div>
+                    <h4>Granada Roja</h4>
+                    <p>Precio: S/ 7.00</p>
+                    <a href="producto-detalle.html" class="btn-ver-mas">Comprar</a>
+                </article>
 
-  <section id="testimonios">
-    <h2>Testimonios</h2>
-    <article>
-      <p>"La mejor camioneta que he tenido, potente y cómoda para trabajar y viajar." <strong>Juan Pérez</strong></p>
-    </article>
-    <article>
-      <p>"Ideal para todo tipo de caminos, resistente y elegante a la vez." <strong>María Torres</strong></p>
-    </article>
-  </section>
+                <article class="producto-card">
+                    <div class="img-container">
+                        <img src="img/producto4.jpg" alt="Producto 4">
+                    </div>
+                    <h4>Uva Verde (sin pepa)</h4>
+                    <p>Precio: S/ 15.00</p>
+                    <a href="producto-detalle.html" class="btn-ver-mas">Comprar</a>
+                </article>
 
-  <section id="contacto">
-    <h2>Formulario de Contacto</h2>
-    <form id="formulario" action="#" method="post">
-      <label for="nombre">Nombre:</label><br>
-      <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required><br><br>
+                <article class="producto-card">
+                    <div class="img-container">
+                        <img src="img/producto5.jpg" alt="Producto 5">
+                    </div>
+                    <h4>Fresa</h4>
+                    <p>Precio: S/ 11.00</p>
+                    <a href="producto-detalle.html" class="btn-ver-mas">Comprar</a>
+                </article>
 
-      <label for="email">Correo Electrónico:</label><br>
-      <input type="email" id="email" name="email" placeholder="Ingresa tu correo" required><br><br>
+                <article class="producto-card">
+                    <div class="img-container">
+                        <img src="img/producto6.jpg" alt="Producto 6">
+                    </div>
+                    <h4>Lechuga (americana)</h4>
+                    <p>Precio: S/ 2.00</p>
+                    <a href="producto-detalle.html" class="btn-ver-mas">Comprar</a>
+                </article>
 
-      <label for="mensaje">Mensaje:</label><br>
-      <textarea id="mensaje" name="mensaje" rows="4" cols="40" placeholder="Escribe tu mensaje" required></textarea><br><br>
+                <article class="producto-card">
+                    <div class="img-container">
+                        <img src="img/producto7.jpg" alt="Producto 7">
+                    </div>
+                    <h4>Granadilla</h4>
+                    <p>Precio: S/ 7.00</p>
+                    <a href="producto-detalle.html" class="btn-ver-mas">Comprar</a>
+                </article>
 
-      <input type="submit" value="Enviar">
-    </form>
+                <article class="producto-card">
+                    <div class="img-container">
+                        <img src="img/producto8.jpg" alt="Producto 8">
+                    </div>
+                    <h4>Papaya</h4>
+                    <p>Precio: S/ 5.00</p>
+                    <a href="producto-detalle.html" class="btn-ver-mas">Comprar</a>
+                </article>
 
-    <!-- Resultado del formulario -->
-    <div id="resultado"></div>
-  </section>
+                <article class="producto-card">
+                    <div class="img-container">
+                        <img src="img/producto9.jpg" alt="Producto 9">
+                    </div>
+                    <h4>Mandarina</h4>
+                    <p>Precio: S/ 4.00</p>
+                    <a href="producto-detalle.html" class="btn-ver-mas">Comprar</a>
+                </article>
 
-  <section id="faq">
-    <h2>Preguntas Frecuentes</h2>
-    <details>
-      <summary>¿Cuál es el consumo promedio de combustible?</summary>
-      <p>El consumo promedio es de aproximadamente 9.5 km/litro dependiendo de las condiciones del terreno.</p>
-    </details>
-    <details>
-      <summary>¿Tiene garantía?</summary>
-      <p>Sí, la Toyota HILUX 4X4 C/S 2GD cuenta con garantía de fábrica por 3 años o 100,000 km.</p>
-    </details>
-    <details>
-      <summary>¿Dónde puedo realizar una prueba de manejo?</summary>
-      <p>Puedes agendar tu prueba en cualquiera de nuestros concesionarios autorizados Toyota.</p>
-    </details>
-  </section>
+                <article class="producto-card">
+                    <div class="img-container">
+                        <img src="img/producto10.jpg" alt="Producto 10">
+                    </div>
+                    <h4>Zanahoria</h4>
+                    <p>Precio: S/ 4.00</p>
+                    <a href="producto-detalle.html" class="btn-ver-mas">Comprar</a>
+                </article>
 
-  <footer>
-    <p>&copy; 2025 Toyota HILUX 4X4 C/S 2GD | Todos los derechos reservados.</p>
-    <nav>
-      <ul>
-        <li><a href="#portada">Inicio</a></li>
-        <li><a href="#caracteristicas">Características</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-        <li><a href="#faq">FAQ</a></li>
-      </ul>
-    </nav>
-  </footer>
+                <article class="producto-card">
+                    <div class="img-container">
+                        <img src="img/producto11.jpg" alt="Producto 11">
+                    </div>
+                    <h4>Choclo (Serrano)</h4>
+                    <p>Precio: S/ 5.00</p>
+                    <a href="producto-detalle.html" class="btn-ver-mas">Comprar</a>
+                </article>
 
-  <!-- Botón flotante -->
-  <button id="btnFlotante"> Chat</button>
+                <article class="producto-card">
+                    <div class="img-container">
+                        <img src="img/producto12.jpg" alt="Producto 12">
+                    </div>
+                    <h4>Papa (Blanca)</h4>
+                    <p>Precio: S/ 3.00</p>
+                    <a href="producto-detalle.html" class="btn-ver-mas">Comprar</a>
+                </article>
 
-  <!-- Ventana emergente -->
-  <div id="ventanaEmergente">
-    <div class="contenido">
-      <span id="cerrarVentana">&times;</span>
-      <h3>Ventana Emergente</h3>
-      <p>¡Hola! ¿Necesitas ayuda o más información sobre la Hilux?</p>
-    </div>
-  </div>
+                <article class="producto-card">
+                    <div class="img-container">
+                        <img src="img/producto13.jpg" alt="Producto 13">
+                    </div>
+                    <h4>Plátano (de Seda)</h4>
+                    <p>Precio: S/ 4.00</p>
+                    <a href="producto-detalle.html" class="btn-ver-mas">Comprar</a>
+                </article>
 
-  <script>
-    // Mostrar datos del formulario
-    document.getElementById('formulario').addEventListener('submit', function(e) {
-      e.preventDefault(); // Evita recargar la página
+                <article class="producto-card">
+                    <div class="img-container">
+                        <img src="img/producto14.jpg" alt="Producto 14">
+                    </div>
+                    <h4>Manzana (Delicia)</h4>
+                    <p>Precio: S/ 5.00</p>
+                    <a href="producto-detalle.html" class="btn-ver-mas">Comprar</a>
+                </article>
+            
+            </div>
+            
+        </section>
 
-      const nombre = document.getElementById('nombre').value;
-      const email = document.getElementById('email').value;
-      const mensaje = document.getElementById('mensaje').value;
+        <section id="cta-registro">
+            <h3>Únete a nuestra comunidad</h3>
+            <p>Regístrate y obtén un 10% de descuento en tu primera compra.</p>
+            
+            <form id="registro-form">
+                <input type="text" placeholder="Ingresa tu nombre" required>
+                <input type="tel" placeholder="Ingresa tu teléfono (opcional)">
+                <input type="email" placeholder="Ingresa tu correo electrónico" required>
+                <button type="submit" class="cta-button">Suscribirme</button>
+            </form>
 
-      const resultado = `
-        <h3>Datos enviados:</h3>
-        <p><strong>Nombre:</strong> ${nombre}</p>
-        <p><strong>Correo:</strong> ${email}</p>
-        <p><strong>Mensaje:</strong> ${mensaje}</p>
-      `;
+        </section>
 
-      document.getElementById('resultado').innerHTML = resultado;
-      document.getElementById('formulario').reset();
-    });
+    </main>
 
-    // Ventana flotante
-    const btnFlotante = document.getElementById('btnFlotante');
-    const ventana = document.getElementById('ventanaEmergente');
-    const cerrarVentana = document.getElementById('cerrarVentana');
-
-    btnFlotante.addEventListener('click', () => {
-      ventana.classList.toggle('mostrar');
-    });
-
-    cerrarVentana.addEventListener('click', () => {
-      ventana.classList.remove('mostrar');
-    });
-  </script>
-
+    <footer>
+        <div class="enlaces-footer">
+            <ul>
+                <li><a href="#">Términos y Condiciones</a></li>
+                <li><a href="#">Políticas de Privacidad</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+        <p>&copy; 2025 EcoMarket. Todos los derechos reservados.</p>
+    </footer>
+    <script src="js/main.js"></script>
 </body>
 </html>
-
-
-
