@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Toyota HILUX 4X4 C/S 2GD</title>
+</head>
+<body>
+
+  <header>
+    <h1>TOYOTA HILUX 4X4 C/S 2GD</h1>
+    <nav>
+      <ul>
+        <li><a href="#portada">Inicio</a></li>
+        <li><a href="#caracteristicas">Características</a></li>
+        <li><a href="#testimonios">Testimonios</a></li>
+        <li><a href="#contacto">Contáctanos</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="portada">
+    <h2>Descubre la nueva Toyota HILUX 4X4 C/S 2GD</h2>
+    <p>La combinación perfecta de potencia, tecnología y resistencia. Diseñada para acompañarte en cualquier terreno.</p>
+    <figure>
+      <video width="1004" height="350" controls autoplay muted>
+        <source src="videos/toyoota linux.mp4">
+      </video>
+      <figcaption>HILUX 4X4</figcaption>
+    </figure>
+  </section>
+
+  <section id="caracteristicas">
+    <h2>Características</h2>
+    <article>
+      <h3>Motor</h3>
+      <p>Su robusto motor diésel 2.4L 2GD-FTV ofrece hasta 150hp y 400Nm de par, asegurando potencia inmediata y rendimiento confiable tanto en ciudad como fuera de la carretera.</p>
+    </article>
+    <article>
+      <h3>Seguridad</h3>
+      <p>Diseñada para ser tan cómoda como capaz, su interior mezcla funcionalidad con estilo, ofreciendo conectividad, control climático, y una ergonomía pensada para largas jornadas de trabajo o aventura.</p>
+    </article>
+    <article>
+      <h3>Confort</h3>
+      <p>Diseñada para ser tan cómoda como capaz, su interior mezcla funcionalidad con estilo, ofreciendo conectividad, control climático, y una ergonomía pensada para largas jornadas de trabajo o aventura.</p>
+    </article>
+  </section>
+
+  <section id="testimonios">
+    <h2>Testimonios</h2>
+    <article>
+      <p>"La mejor camioneta que he tenido, potente y cómoda para trabajar y viajar." <strong>Juan Pérez</strong></p>
+    </article>
+    <article>
+      <p>"Ideal para todo tipo de caminos, resistente y elegante a la vez." <strong>María Torres</strong></p>
+    </article>
+  </section>
+
+  <section id="contacto">
+    <h2>Formulario de Contacto</h2>
+    <form id="formulario" action="#" method="post">
+      <label for="nombre">Nombre:</label><br>
+      <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required><br><br>
+
+      <label for="email">Correo Electrónico:</label><br>
+      <input type="email" id="email" name="email" placeholder="Ingresa tu correo" required><br><br>
+
+      <label for="mensaje">Mensaje:</label><br>
+      <textarea id="mensaje" name="mensaje" rows="4" cols="40" placeholder="Escribe tu mensaje" required></textarea><br><br>
+
+      <input type="submit" value="Enviar">
+    </form>
+
+    <!-- Resultado del formulario -->
+    <div id="resultado"></div>
+  </section>
+
+  <section id="faq">
+    <h2>Preguntas Frecuentes</h2>
+    <details>
+      <summary>¿Cuál es el consumo promedio de combustible?</summary>
+      <p>El consumo promedio es de aproximadamente 9.5 km/litro dependiendo de las condiciones del terreno.</p>
+    </details>
+    <details>
+      <summary>¿Tiene garantía?</summary>
+      <p>Sí, la Toyota HILUX 4X4 C/S 2GD cuenta con garantía de fábrica por 3 años o 100,000 km.</p>
+    </details>
+    <details>
+      <summary>¿Dónde puedo realizar una prueba de manejo?</summary>
+      <p>Puedes agendar tu prueba en cualquiera de nuestros concesionarios autorizados Toyota.</p>
+    </details>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Toyota HILUX 4X4 C/S 2GD | Todos los derechos reservados.</p>
+    <nav>
+      <ul>
+        <li><a href="#portada">Inicio</a></li>
+        <li><a href="#caracteristicas">Características</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+  <!-- Botón flotante -->
+  <button id="btnFlotante"> Chat</button>
+
+  <!-- Ventana emergente -->
+  <div id="ventanaEmergente">
+    <div class="contenido">
+      <span id="cerrarVentana">&times;</span>
+      <h3>Ventana Emergente</h3>
+      <p>¡Hola! ¿Necesitas ayuda o más información sobre la Hilux?</p>
+    </div>
+  </div>
+
+  <script>
+    // Mostrar datos del formulario
+    document.getElementById('formulario').addEventListener('submit', function(e) {
+      e.preventDefault(); // Evita recargar la página
+
+      const nombre = document.getElementById('nombre').value;
+      const email = document.getElementById('email').value;
+      const mensaje = document.getElementById('mensaje').value;
+
+      const resultado = `
+        <h3>Datos enviados:</h3>
+        <p><strong>Nombre:</strong> ${nombre}</p>
+        <p><strong>Correo:</strong> ${email}</p>
+        <p><strong>Mensaje:</strong> ${mensaje}</p>
+      `;
+
+      document.getElementById('resultado').innerHTML = resultado;
+      document.getElementById('formulario').reset();
+    });
+
+    // Ventana flotante
+    const btnFlotante = document.getElementById('btnFlotante');
+    const ventana = document.getElementById('ventanaEmergente');
+    const cerrarVentana = document.getElementById('cerrarVentana');
+
+    btnFlotante.addEventListener('click', () => {
+      ventana.classList.toggle('mostrar');
+    });
+
+    cerrarVentana.addEventListener('click', () => {
+      ventana.classList.remove('mostrar');
+    });
+  </script>
+
+</body>
+</html>
+
+
+
